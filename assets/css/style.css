@@ -1,0 +1,56 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+  }
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+@media screen and (min-width: 700px) {
+  h2, h3, h4, h5, h6 {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

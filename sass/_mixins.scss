@@ -1,0 +1,19 @@
+@mixin width-container {
+    width: 100%;
+    min-width: $Query-minw;
+    max-width: $Query-Maxw;
+    margin: 0 auto;
+}
+
+@mixin flex-container ($justic:space-between, $aligni: center) {
+    display:flex;
+    flex-direction: column;
+    justify-content: $justic;
+    align-items: $aligni;
+
+    @media screen and (min-width:$Query-Tablet) {
+        flex-direction: row;
+        // justify-content: $justic;
+        // align-items: $aligni;
+    }
+}
