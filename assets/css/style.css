@@ -96,6 +96,11 @@ img {
 .header .header__logo {
   width: 10.7rem;
 }
+@media screen and (min-width: 650px) {
+  .header .header__logo {
+    width: 20rem;
+  }
+}
 .header .header__cta {
   width: 10rem;
   height: 2.8rem;
@@ -156,7 +161,6 @@ img {
 }
 @media screen and (min-width: 650px) {
   .wrapper {
-    padding-block-end: 0rem;
     background-image: url("/huddle-alternative/assets/img/bg-hero-desktop.svg");
   }
 }

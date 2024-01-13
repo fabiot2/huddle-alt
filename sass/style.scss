@@ -13,7 +13,6 @@
     background-image: url('/huddle-alternative/assets/img/bg-hero-mobile.svg');
 
     @media screen and (min-width:$Query-Tablet) {
-        padding-block-end: 0rem;
         background-image: url('/huddle-alternative/assets/img/bg-hero-desktop.svg');
 
     }

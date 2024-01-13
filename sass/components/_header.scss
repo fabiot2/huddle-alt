@@ -10,6 +10,11 @@
 
     .header__logo {
         width: 10.7rem;
+
+        @media screen and (min-width:$Query-Tablet){
+            width: 20rem;
+        }
+    
     }
     
     .header__cta {
