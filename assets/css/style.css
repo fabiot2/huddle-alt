@@ -13,11 +13,13 @@ body {
   background-color: #ffffff;
   font-size: 1.4rem;
   line-height: 2.1rem;
+  text-align: center;
 }
 @media screen and (min-width: 700px) {
   body {
     font-size: 1.8rem;
     line-height: 2.7rem;
+    text-align: left;
   }
 }
 

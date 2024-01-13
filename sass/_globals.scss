@@ -51,10 +51,12 @@ body {
     background-color: $White;
     font-size: $Body-Size-Mobile; 
     line-height: $Body-Line-Mobile;
+    text-align: center;  
     
     @media screen and (min-width:$Query-Tablet) {
         font-size: $Body-Size; 
         line-height: $Body-Line;
+        text-align: left;
     }
 }
 
