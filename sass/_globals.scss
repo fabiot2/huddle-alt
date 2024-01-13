@@ -13,7 +13,7 @@ $Header-color: $Very-Dark-Cyan;
 $H1-Size-Mobile:2.3rem;
 $H1-Line-Mobile:$H1-Size-Mobile;
 $H1-Size:3.8rem;
-$H1-Line:$H1-Size;
+$H1-Line:5.9rem;
 
 $H2-Size-Mobile:2rem;
 $H2-Line-Mobile:$H2-Size-Mobile;
@@ -32,9 +32,9 @@ $Body-Line:2.7rem;
 
 //  Query-layout
 $Query-minw:375px;
-$Query-Tablet: 700px; 
-$Query-PC:1200px;
-$Query-Maxw:1268px;
+$Query-Tablet: 650px; 
+$Query-PC:1240px;
+$Query-Maxw:1308px;
 
 *, *::after, *::before {
     margin: 0;
@@ -51,7 +51,7 @@ body {
     background-color: $White;
     font-size: $Body-Size-Mobile; 
     line-height: $Body-Line-Mobile;
-    text-align: center;  
+    text-align: center;
     
     @media screen and (min-width:$Query-Tablet) {
         font-size: $Body-Size; 
@@ -62,19 +62,17 @@ body {
 
 h1 {
     font-family: $Header-Family;
-    background-color: $White;
     font-size: $H1-Size-Mobile; 
-    line-height: $H1-Line-Mobile;
+    line-height: 3.6rem;
     
     @media screen and (min-width:$Query-Tablet) {
         font-size: $H1-Size; 
-        line-height: $H1-Line;
+        line-height: 5.9rem;
     }
 }
 
 h2, h3, h4, h5, h6 {
     font-family: $Header-Family;
-    background-color: $White;
     font-size: $H2-Size-Mobile; 
     line-height: $H2-Line-Mobile;
     
@@ -90,4 +88,8 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+img {
+    width: 100%;
 }

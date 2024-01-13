@@ -6,3 +6,75 @@
 @import './components/buttons';
 @import './components/footer';
 
+.wrapper {
+    min-height: 72rem;
+    padding-block-end: 3.8rem;
+    background-color: $Very-Pale-Cyan;
+    background-image: url('/huddle-alternative/assets/img/bg-hero-mobile.svg');
+
+    @media screen and (min-width:$Query-Tablet) {
+        padding-block-end: 0rem;
+        background-image: url('/huddle-alternative/assets/img/bg-hero-desktop.svg');
+
+    }
+}
+
+.hero {
+    @include  width-container;
+    @include flex-container (column,column);
+    min-height: 100%;
+    margin-block-start: 4.5rem;
+
+
+    
+    @media screen and (min-width: 1240px) {
+        flex-direction: row;
+        margin-block-start: 1rem;
+    }
+
+  
+    
+    &__info {
+        text-align: center;
+        margin: 0 auto;
+
+        @media screen and (min-width:$Query-Tablet) {
+            margin-block-start: 0rem;
+            width: 50rem;
+        }
+
+        @media screen and (min-width:$Query-PC) {
+            margin: 0;
+            text-align: start;
+            align-self: start;
+            margin-block-start: 10rem;
+        }
+    }
+
+    &__title {
+        @include text-width;
+
+        @media screen and (min-width:$Query-Tablet) {
+            width: 50rem;
+        }
+    }
+
+    &__text {
+        @include text-width ;
+        margin-block: 3rem;
+    }
+
+    &__media {
+        max-width: 100%;
+        margin-block-start: 5rem;
+
+        @media screen and (min-width:$Query-Tablet) {
+            max-width: 68rem;
+        }
+
+        @media screen and (min-width:$Query-PC) {
+            margin-block-start: 0rem;
+        }
+    }
+}
+

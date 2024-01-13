@@ -15,7 +15,7 @@ body {
   line-height: 2.1rem;
   text-align: center;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   body {
     font-size: 1.8rem;
     line-height: 2.7rem;
@@ -25,24 +25,22 @@ body {
 
 h1 {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
   font-size: 2.3rem;
-  line-height: 2.3rem;
+  line-height: 3.6rem;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   h1 {
     font-size: 3.8rem;
-    line-height: 3.8rem;
+    line-height: 5.9rem;
   }
 }
 
 h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
   font-size: 2rem;
   line-height: 2rem;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   h2, h3, h4, h5, h6 {
     font-size: 2.8rem;
     line-height: 2.8rem;
@@ -57,6 +55,63 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 7.3rem;
+}
+@media screen and (min-width: 650px) {
+  .header {
+    max-width: 1308px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .header {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 650px) {
+  .header {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 650px) {
+  .header {
+    height: 14.5rem;
+  }
+}
+.header .header__logo {
+  width: 10.7rem;
+}
+.header .header__cta {
+  width: 10rem;
+  height: 2.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #00252e;
+}
+@media screen and (min-width: 650px) {
+  .header .header__cta {
+    width: 20.3rem;
+    height: 4.9rem;
+    font-size: 1.4rem;
+  }
+}
+
 .button {
   width: 24.2rem;
   height: 4.1rem;
@@ -65,7 +120,7 @@ a {
   border: none;
   border-radius: 2.9rem;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .button {
     width: 28.2rem;
     height: 5.7rem;
@@ -73,22 +128,137 @@ a {
   }
 }
 
-.button-main {
+.button--main {
   background-color: #ff52bf;
   color: white;
 }
 
-.button-alt {
+.button--alt {
   width: 9.8rem;
   height: 2.7rem;
   font-size: 1rem;
   background-color: #ffffff;
   color: #00252e;
 }
-@media screen and (min-width: 700px) {
-  .button-alt {
+@media screen and (min-width: 650px) {
+  .button--alt {
     width: 2.3rem;
     height: 4.9rem;
     font-size: 1.5rem;
+  }
+}
+
+.wrapper {
+  min-height: 72rem;
+  padding-block-end: 3.8rem;
+  background-color: #ebfbff;
+  background-image: url("/huddle-alternative/assets/img/bg-hero-mobile.svg");
+}
+@media screen and (min-width: 650px) {
+  .wrapper {
+    padding-block-end: 0rem;
+    background-image: url("/huddle-alternative/assets/img/bg-hero-desktop.svg");
+  }
+}
+
+.hero {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100%;
+  margin-block-start: 4.5rem;
+}
+@media screen and (min-width: 650px) {
+  .hero {
+    max-width: 1308px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .hero {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 650px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .hero {
+    flex-direction: row;
+    margin-block-start: 1rem;
+  }
+}
+.hero__info {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 650px) {
+  .hero__info {
+    margin-block-start: 0rem;
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .hero__info {
+    margin: 0;
+    text-align: start;
+    align-self: start;
+    margin-block-start: 10rem;
+  }
+}
+.hero__title {
+  width: 30rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 650px) {
+  .hero__title {
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .hero__title {
+    width: 51.2rem;
+  }
+}
+@media screen and (min-width: 650px) {
+  .hero__title {
+    width: 50rem;
+  }
+}
+.hero__text {
+  width: 30rem;
+  margin: 0 auto;
+  margin-block: 3rem;
+}
+@media screen and (min-width: 650px) {
+  .hero__text {
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .hero__text {
+    width: 51.2rem;
+  }
+}
+.hero__media {
+  max-width: 100%;
+  margin-block-start: 5rem;
+}
+@media screen and (min-width: 650px) {
+  .hero__media {
+    max-width: 68rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .hero__media {
+    margin-block-start: 0rem;
   }
 }

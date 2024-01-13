@@ -1,19 +1,44 @@
 @mixin width-container {
     width: 100%;
-    min-width: $Query-minw;
-    max-width: $Query-Maxw;
+    max-width:50rem;
     margin: 0 auto;
-}
-
-@mixin flex-container ($justic:space-between, $aligni: center) {
-    display:flex;
-    flex-direction: column;
-    justify-content: $justic;
-    align-items: $aligni;
+    padding: 0 2rem;
+    text-align: center;
 
     @media screen and (min-width:$Query-Tablet) {
-        flex-direction: row;
-        // justify-content: $justic;
-        // align-items: $aligni;
+        max-width: $Query-Maxw;
     }
+
+
+    @media screen and (min-width:$Query-PC) {
+        text-align: left;
+    }
+}
+
+
+@mixin flex-container ($direction:column, $qdirection: row, $justic:space-between, $aligni: center) {
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $justic;
+    align-items: $aligni;
+    flex-wrap: wrap;
+
+
+    @media screen and (min-width:$Query-Tablet) {
+        flex-direction: $qdirection;
+    }
+}
+
+@mixin text-width ($width:30rem, $widtht: 50rem, $widthp: 51.2rem ){
+    width:  $width;
+    margin: 0 auto;
+
+    @media screen and (min-width:$Query-Tablet) {
+        width:$widtht;
+    }
+
+    @media screen and (min-width:$Query-PC) {
+        width: $widthp;
+    }
+
 }
