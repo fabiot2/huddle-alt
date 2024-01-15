@@ -6,7 +6,7 @@
 @import './components/buttons';
 @import './components/footer';
 
-.wrapper {
+.wrapper-hero {
     min-height: 72rem;
     padding-block-end: 3.8rem;
     background-color: $Very-Pale-Cyan;
@@ -146,9 +146,42 @@
 
 }
 
-
 .section__card:nth-child(2n+1) {
     @media screen and (min-width:$Query-Tablet) {
         flex-direction: row-reverse!important;
     }
+}
+
+.wrapper--cta {
+    @include width-container;
+}
+
+.section__cta {
+    @include flex-container (column,column, center,center);
+
+    margin: 0 auto;
+    max-width: 35.3rem;
+    max-width:50rem;
+    min-height: 17rem;
+    border-radius: 1.2rem;
+    box-shadow: 0px 0px 12px #e4e4e4;
+
+    @media screen and (min-width:$Query-Tablet) {
+        text-align: center;
+        height: 27rem;
+        max-width:80rem;
+    }
+
+    .section__title {
+        font-size: 1.8rem;
+
+        @media screen and (min-width:$Query-Tablet) {
+            font-size: 3.2rem;
+        }
+    }
+
+    .button__cta {
+        margin-block-start: 4rem;
+    }
+
 }

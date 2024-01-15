@@ -155,14 +155,14 @@ img {
   }
 }
 
-.wrapper {
+.wrapper-hero {
   min-height: 72rem;
   padding-block-end: 3.8rem;
   background-color: #ebfbff;
   background-image: url("/huddle-alternative/assets/img/bg-hero-mobile.svg");
 }
 @media screen and (min-width: 650px) {
-  .wrapper {
+  .wrapper-hero {
     background-image: url("/huddle-alternative/assets/img/bg-hero-desktop.svg");
   }
 }
@@ -363,4 +363,59 @@ img {
   .section__card:nth-child(2n+1) {
     flex-direction: row-reverse !important;
   }
+}
+
+.wrapper--cta {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 650px) {
+  .wrapper--cta {
+    max-width: 1308px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .wrapper--cta {
+    text-align: left;
+  }
+}
+
+.section__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 35.3rem;
+  max-width: 50rem;
+  min-height: 17rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 0px 12px #e4e4e4;
+}
+@media screen and (min-width: 650px) {
+  .section__cta {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 650px) {
+  .section__cta {
+    text-align: center;
+    height: 27rem;
+    max-width: 80rem;
+  }
+}
+.section__cta .section__title {
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 650px) {
+  .section__cta .section__title {
+    font-size: 3.2rem;
+  }
+}
+.section__cta .button__cta {
+  margin-block-start: 4rem;
 }
