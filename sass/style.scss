@@ -77,3 +77,78 @@
     }
 }
 
+.section__card-container {
+    @include width-container;
+    min-width: 33.4rem;
+    padding-block: 3.7rem 12rem;
+
+    @media screen and (min-width:$Query-PC) {
+        padding-block: 12rem;
+    }
+
+    .section__card {
+        @include flex-container (column,row, center, center);
+        flex-wrap: nowrap;
+        max-height: 49.1rem;
+        margin: 1.9rem auto;
+        padding: 4rem;
+        border-radius: 1.4rem;
+        box-shadow: 0px 0px 12px #e4e4e4;
+
+        @media screen and (min-width:$Query-Tablet) {
+            max-width: 80rem;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        @media screen and (min-width:$Query-PC) {
+            padding-block: 6rem 4rem;
+            max-height: 44.5rem;
+            max-width: 100%;
+        }
+    }
+
+    .section__card__img {
+        width: 25rem;
+        height: 21.4rem;
+
+        @media screen and (min-width:$Query-Tablet) {
+            min-width: 40%;
+        }
+
+        @media screen and (min-width:$Query-PC) {
+            width: 42.6rem;
+            height: 32.1rem;
+        }
+    }
+
+    .section__card__info {
+        @media screen and (min-width:$Query-Tablet) {
+            max-width: 48rem;
+            text-align: start;
+        }        
+    }
+
+    .section__card__title {
+        margin-block: 5rem 2.4rem;
+        color: $Very-Dark-Cyan;
+
+        @media screen and (min-width:$Query-Tablet) {
+            margin-block: 0 3rem;
+        }
+    }
+
+    .section__card__text {
+        color: $Grayish-Blue;
+    }
+
+
+
+}
+
+
+.section__card:nth-child(2n+1) {
+    @media screen and (min-width:$Query-Tablet) {
+        flex-direction: row-reverse!important;
+    }
+}

@@ -23,7 +23,6 @@
     align-items: $aligni;
     flex-wrap: wrap;
 
-
     @media screen and (min-width:$Query-Tablet) {
         flex-direction: $qdirection;
     }
